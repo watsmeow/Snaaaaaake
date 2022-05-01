@@ -1,16 +1,25 @@
 body {
-    background-color: pink;
+    background-color: transparent;
     text-align: center;
 }
+
+html { 
+    text-align: center;
+    background: url(bg2.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
 
 #gameContainer {
     width: 40vw;
     height: 40vh;
-    margin: 1vw auto; 
+    margin: 10% auto 2% auto; 
     background-color: black;
-    border: solid 10px blue;
+    border: solid 10px #7FCBFA;
     border-radius: 10px;
-    box-shadow: 0px 0px 20px 3px black;
+    box-shadow: 0 0 10px lightblue;
 }
 
 .gameBoardPixel {
@@ -18,7 +27,6 @@ body {
     height: 1vh;
     border-radius: 10px;
     float: left;
-    outline: 1px solid magenta;
 }
 
 .food {
@@ -41,15 +49,17 @@ body {
 .scoreBoard {
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
+    text-transform: capitalize;
     border-radius: 10px;
-    border: solid 5px blue;
+    border: solid 5px #7FCBFA;
     color: white;
     background-color: black;
     padding: 5px; 
     width: 40%;
-    box-shadow: 0px 0px 20px 3px black;
+    box-shadow: 0 0 10px lightblue;
 }
 
 #onScreenControllers {
     display: none;
 }
+
